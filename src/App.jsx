@@ -4,12 +4,13 @@ import Sweeper from "./components/Beranda/Sweeper";
 import Populer from "./components/Beranda/SedangPopuler";
 import KotaPopuler from "./components/Beranda/KotaPopuler";
 import Footer from "./components/Footer";
+import PrivateTrip from "./components/Beranda/PrivateTrip";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Footer />,
+            element: <PrivateTrip />,
         },
     ]);
 
