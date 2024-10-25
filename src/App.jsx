@@ -6,12 +6,13 @@ import KotaPopuler from "./components/Beranda/KotaPopuler";
 import Footer from "./components/Footer";
 import PrivateTrip from "./components/Beranda/PrivateTrip";
 import Navbar_1 from "./components/Beranda/Navbar_1";
+import Beranda from "./pages/Beranda";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Sweeper />,
+            element: <Beranda/>,
         },
     ]);
 

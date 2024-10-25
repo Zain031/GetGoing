@@ -34,7 +34,7 @@ const SedangPopuler = () => {
     ];
 
     return (
-        <div className="px-[260px] my-[120px] py-20 ">
+        <div className="px-[260px]  py-20 ">
             <h2
                 style={{ fontFamily: "Poppins", fontSize: "32px" }}
                 className="my-4  font-bold"

@@ -8,17 +8,17 @@ import image_5 from "../../assets/Beranda/cityImages_Untitled design (22)-min.pn
 const KotaPopuler = () => {
     const data = [
         {
-            image: image_1,
+            image: image_2,
             city: "Paris",
             country: "Prancis",
         },
         {
-            image: image_2,
+            image: image_1,
             city: "Bern",
             country: "Swiss",
         },
         {
-            image: image_3,
+            image: image_5,
             city: "Amsterdam",
             country: "Belanda",
         },
@@ -28,14 +28,14 @@ const KotaPopuler = () => {
             country: "Inggris",
         },
         {
-            image: image_5,
+            image: image_3,
             city: "Roma",
             country: "Italia",
         },
     ];
 
     return (
-        <div className="px-[260px] my-[120px] py-20 ">
+        <div className="px-[260px]  py-10 ">
             <h2
                 style={{ fontFamily: "Poppins", fontSize: "32px" }}
                 className="my-4 font-bold"

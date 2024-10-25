@@ -30,7 +30,7 @@ const PrivateTrip = () => {
     ];
 
     return (
-        <div className="px-[260px] font-poppins">
+        <div className="px-[260px] font-poppins ">
             <h1 className=" font-extrabold text-3xl text-center">
                 "Better to <span className="text-[#cc0001]">SEE</span> something
                 once than hear it about it

@@ -29,7 +29,7 @@ export default function Sweeper() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="px-[260px] my-[120px] flex gap-[140px] font-poppins">
+                    <div className="px-[260px]  flex gap-[140px] font-poppins">
                         <div className="w-[600px] h-[350px] overflow-hidden rounded-2xl">
                             <img
                                 className="w-full h-full object-cover"
@@ -63,7 +63,7 @@ export default function Sweeper() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="px-[260px] my-[120px] flex gap-[140px]">
+                    <div className="px-[260px]  flex gap-[140px]">
                         <div className="w-[600px] h-[350px] overflow-hidden rounded-2xl">
                             <img
                                 className="w-full h-full object-cover"
