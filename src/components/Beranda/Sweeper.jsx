@@ -20,7 +20,7 @@ export default function Sweeper() {
                     delay: 5000,
                     disableOnInteraction: false,
                 }}
-                speed={1000}
+                speed={950}
                 pagination={{
                     clickable: true,
                 }}
@@ -29,7 +29,7 @@ export default function Sweeper() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="px-[260px] my-[120px] flex gap-[140px]">
+                    <div className="px-[260px] my-[120px] flex gap-[140px] font-poppins">
                         <div className="w-[600px] h-[350px] overflow-hidden rounded-2xl">
                             <img
                                 className="w-full h-full object-cover"
@@ -37,14 +37,17 @@ export default function Sweeper() {
                                 alt=""
                             />
                         </div>
-                        <div className="pb-[75px] pt-[65px] text-center">
-                            EKSPLOR DAN NIKMATI MUDAH LIBURAN KE <br /> LUAR
-                            NEGRI DENGAN <br />
-                            <span className="fornt-extrabold text-3xl">
-                                Apliaksi GetGoing
-                            </span>
+                        <div className="pb-[75px] pt-[65px] text-center text-sm text-slate-500">
+                            <p>
+                                {" "}
+                                EKSPLOR DAN NIKMATI MUDAH LIBURAN KE <br />
+                                LUAR NEGRI DENGAN
+                            </p>
+                            <p className="text-slate-800 font-extrabold text-2xl mt-2">
+                                APLIKASI GET GOING
+                            </p>
                             <br /> DAPAT DI DOWNLOAD DI
-                            <div className="flex gap-[75px]">
+                            <div className="flex gap-[75px] mt-3">
                                 <img
                                     className="w-[191px]"
                                     src={image_3}

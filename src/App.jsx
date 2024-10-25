@@ -11,7 +11,7 @@ function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Navbar_1 />,
+            element: <Sweeper />,
         },
     ]);
 

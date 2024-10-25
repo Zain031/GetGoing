@@ -27,8 +27,9 @@ const Navbar_1 = () => {
                     <p className="font-bold text-red-600">Beranda</p>
                     <p>Servis Kami</p>
                     <p>Blog</p>
-                    <p className="text-black font-bold tracking-widest">Login</p>
-
+                    <p className="text-black font-bold tracking-widest">
+                        Login
+                    </p>
                 </div>
             </div>
         </>
