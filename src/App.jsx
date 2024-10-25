@@ -5,12 +5,13 @@ import Populer from "./components/Beranda/SedangPopuler";
 import KotaPopuler from "./components/Beranda/KotaPopuler";
 import Footer from "./components/Footer";
 import PrivateTrip from "./components/Beranda/PrivateTrip";
+import Navbar_1 from "./components/Beranda/Navbar_1";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <PrivateTrip />,
+            element: <Navbar_1 />,
         },
     ]);
 

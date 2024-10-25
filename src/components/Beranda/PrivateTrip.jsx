@@ -111,9 +111,7 @@ const PrivateTrip = () => {
                             key={index}
                             className="relative w-[266px] h-[156px] rounded-xl shadow-md "
                         >
-                            <div className="absolute inset-0 bg-gray-200 opacity-25 rounded-xl ">
-
-                            </div>
+                            <div className="absolute inset-0 bg-gray-200 opacity-25 rounded-xl "></div>
 
                             <div className="relative p-6">
                                 <div className="w-[60px] h-[60px] bg-white rounded-xl p-2">
