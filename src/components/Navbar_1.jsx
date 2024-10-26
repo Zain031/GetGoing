@@ -1,5 +1,5 @@
 import React from "react";
-import image_1 from "../../assets/Beranda/LogoGetGoing-1b06f75eefdc319bb98ba925a24ee023.png";
+import image_1 from "../../src/assets/Beranda/LogoGetGoing-1b06f75eefdc319bb98ba925a24ee023.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const Navbar_1 = () => {
@@ -22,12 +22,10 @@ const Navbar_1 = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-5 text-sm text-red-600">
-                    <p className="font-bold text-red-600">Beranda</p>
-                    <p>Servis Kami</p>
-                    <p>Blog</p>
-                    <p className="text-black font-bold tracking-widest">
-                        Login
-                    </p>
+                <p className={`${location.pathname === "/" && "font-bold"} whitespace-nowrap    text-red-600`}>Beranda</p>
+                <p className={` ${location.pathname === "/servicekami" && "font-bold"} whitespace-nowrap`}>Servis Kami</p>
+                <p  className={` ${location.pathname === "/blog" && "font-bold"} whitespace-nowrap`}>Blog</p>
+                <p className="text-black font-bold tracking-widest">Login</p>
                 </div>
             </div>
         </div>

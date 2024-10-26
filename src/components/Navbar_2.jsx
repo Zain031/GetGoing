@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
-import image_1 from "../../assets/Beranda/logo.png";
+import image_1 from "../../src/assets/Beranda/logo.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 const Navbar_2 = () => {
     const [rotateLogo, setRotateLogo] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
+    const [fontBold,setFontBold] = useState(false)
+    const location = useLocation()
+
 
     useEffect(() => {
         setRotateLogo(true);
@@ -41,9 +45,9 @@ const Navbar_2 = () => {
             </div>
 
             <div className="flex items-center gap-5 text-sm text-red-600">
-                <p className="font-bold text-red-600">Beranda</p>
-                <p className="whitespace-nowrap">Servis Kami</p>
-                <p>Blog</p>
+                <p className={`${location.pathname === "/" && "font-bold"} whitespace-nowrap    text-red-600`}>Beranda</p>
+                <p className={` ${location.pathname === "/servicekami" && "font-bold"} whitespace-nowrap`}>Servis Kami</p>
+                <p  className={` ${location.pathname === "/blog" && "font-bold"} whitespace-nowrap`}>Blog</p>
                 <p className="text-black font-bold tracking-widest">Login</p>
             </div>
         </div>
