@@ -16,7 +16,7 @@ const MengapaKami = () => {
                     Kami berdedikasi untuk memberikan pengalaman perjalanan yang
                     tak terlupakan
                 </p>
-                <div className="grid gap-8 sm:grid-cols-3">
+                <div className="grid gap-5 sm:grid-cols-3">
                     <div className="flex p-6 gap-6 ">
                         <div className="w-12 h-12 flex items-top justify-center bg-blue-100 rounded-md p-3 ">
                             <FaMapMarkerAlt className="text-blue-500 text-2xl" />
