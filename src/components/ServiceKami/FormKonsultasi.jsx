@@ -1,145 +1,167 @@
-import React from "react";
+import React, { useState } from "react";
 import image_1 from "../../assets/Servis Kami/whatsapp-button.png";
 
 const FormKonsultasi = () => {
+    const [selectedService, setSelectedService] = useState("PILIH SERVICE");
+
+    const services = [
+        { title: "Private Trip", description: "Dengan transportasi umum" },
+        { title: "Private Trip", description: "Full dengan MOBIL PRIBADI" },
+        {
+            title: "Jasa Local Guide",
+            description: "Setiap kota beda local guide",
+        },
+        {
+            title: "Land Arrangement",
+            description: "Untuk grup besar minimal 15 orang",
+        },
+    ];
+
+    const handleSelectService = (service) => {
+        setSelectedService(`${service.title} `);
+    };
+
     return (
-        <div className="mx-auto w-[640px] bg-[#cc0001] rounded-xl h-[652px] font-poppins ">
-            <h1 className="ml-[14px] pt-4 pl-4 text-white font-extrabold text-3xl">
+        <div className="mx-auto w-[640px] bg-[#cc0001] rounded-xl h-[652px] font-poppins">
+            <h1 className="pt-4 pl-4 text-white font-extrabold text-3xl">
                 Konsultasikan dengan kami
             </h1>
-            <p className="ml-[14px] pt-1  text-md font-light pl-4 text-white">
-                {" "}
+            <p className="pt-1 pl-4 text-md font-light text-white">
                 Tim kami siap untuk membantu perjalananmu!
             </p>
-            <form action="" method="POST" className="mt-[30px] mb-[30px]  ">
+
+            <form method="POST" className="mt-[30px] mb-[30px]">
                 <div className="flex gap-[20px] mx-[25px]">
-                    <div className="w-full  sm:w-1/2 ">
-                        <div className="mb-5">
-                            <label
-                                htmlFor="fName"
-                                className="mb-3 block text-base  text-white font-extralight"
-                            >
-                                Nama Depan
-                            </label>
-                            <input
-                                type="text"
-                                name="fName"
-                                id="fName"
-                                placeholder="First Name"
-                                className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
+                    <div className="w-full sm:w-1/2">
+                        <label
+                            htmlFor="fName"
+                            className="mb-3 block text-base text-white font-extralight"
+                        >
+                            Nama Depan
+                        </label>
+                        <input
+                            type="text"
+                            name="fName"
+                            id="fName"
+                            placeholder="First Name"
+                            className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        />
                     </div>
-                    <div className="w-full px-3 sm:w-1/2">
-                        <div className="mb-5">
-                            <label
-                                htmlFor="lName"
-                                className="mb-3 block text-base  text-white font-extralight "
-                            >
-                                Nama Belakang
-                            </label>
-                            <input
-                                type="text"
-                                name="lName"
-                                id="lName"
-                                placeholder="Last Name"
-                                className="rounded-md w-[280px] border h-[38px] border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="flex  ml-[14px] ">
-                    <div className="w-full px-3 sm:w-1/2 ">
-                        <div className="mb-5">
-                            <label
-                                htmlFor="fName"
-                                className="mb-3 block text-base  text-white font-extralight"
-                            >
-                                Alamat Email
-                            </label>
-                            <input
-                                type="text"
-                                name="fName"
-                                id="fName"
-                                placeholder="First Name"
-                                className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
-                    </div>
-                    <div className="w-full px-3 sm:w-1/2">
-                        <div className="mb-5 ">
-                            <label
-                                htmlFor="lName"
-                                className="mb-3 block text-base  text-white font-extralight"
-                            >
-                                Nomor Telephone
-                            </label>
-                            <input
-                                type="text"
-                                name="lName"
-                                id="lName"
-                                placeholder="Last Name"
-                                className="rounded-md  w-[280px] border h-[38px] border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                            />
-                        </div>
+                    <div className="w-full sm:w-1/2">
+                        <label
+                            htmlFor="lName"
+                            className="mb-3 block text-base text-white font-extralight"
+                        >
+                            Nama Belakang
+                        </label>
+                        <input
+                            type="text"
+                            name="lName"
+                            id="lName"
+                            placeholder="Last Name"
+                            className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        />
                     </div>
                 </div>
 
-                <div className="mb-[26px] ">
+                <div className="flex gap-[20px] mx-[25px]">
+                    <div className="w-full sm:w-1/2">
+                        <label
+                            htmlFor="email"
+                            className="mb-3 block text-base text-white font-extralight"
+                        >
+                            Alamat Email
+                        </label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            placeholder="Alamat Email"
+                            className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        />
+                    </div>
+                    <div className="w-full sm:w-1/2">
+                        <label
+                            htmlFor="phone"
+                            className="mb-3 block text-base text-white font-extralight"
+                        >
+                            Nomor Telepon
+                        </label>
+                        <input
+                            type="text"
+                            name="phone"
+                            id="phone"
+                            placeholder="Nomor Telepon"
+                            className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        />
+                    </div>
+                </div>
+
+                <div className="mb-[26px]  bg-blue-700  mx-[25px] mt-2">
                     <label
-                        htmlFor="date"
-                        className="mb-3 block ml-[30px]  text-base  text-white font-extralight"
+                        htmlFor="service"
+                        className="mb-3 block text-base text-white font-extralight w-full"
                     >
-                        service
+                        Service
                     </label>
-                    <select className="select ml-[26px] w-[590px] border border-[#e0e0e0] bg-white h-[38px] ">
-                        <option disabled selected className="font-extrabold">
-                            PILIH SERVICE
-                        </option>
-                        <option>
-                            <h1 className="font-bold text-3xl">Private Trip</h1>
-                            <br />
-                            <p>Dengan transportasi umum</p>
-                        </option>
-                        <option>
-                            <h1 className="font-bold text-3xl">Private Trip</h1>
-                            <br />
-                            <p>Full dengan MOBIL PRIBADI</p>
-                        </option>
-                        <option>
-                            <h1 className="font-bold text-3xl">Jasa local guide</h1>
-                            <br />
-                            <p>Setiap kota beda local guide</p>
-                        </option>
-                        <option>
-                            <h1 className="font-bold text-3xl">Land arrangement</h1>
-                            <br />
-                            <p>Untuk grup besar minimal 15 orang</p>
-                        </option>
-                    </select>
+                    <div className="dropdown dropdown-bottom w-full ">
+                        <div
+                            tabIndex={0}
+                            role="button"
+                            className="w-full  bg-white text-black border border-[#e0e0e0] h-[38px] px-4 py-2 rounded-md"
+                        >
+                            {selectedService}
+                        </div>
+                        <ul
+                            tabIndex={0}
+                            className="dropdown-content menu bg-white rounded-box z-[1] w-full p-2 shadow-md mt-2"
+                        >
+                            {services.map((service, index) => (
+                                <li key={index}>
+                                    <a
+                                        onClick={() =>
+                                            handleSelectService(service)
+                                        }
+                                        className="block px-4 py-2 text-left hover:bg-gray-100"
+                                    >
+                                        <p className="font-bold text-base">
+                                            {service.title}
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            {service.description}
+                                        </p>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="mb-[26px] mx-3 ">
+                <div className="mb-[26px] mx-[25px]">
                     <label
-                        htmlFor="date"
-                        className="mb-3 block ml-[14px]  text-base  text-white font-extralight"
+                        htmlFor="details"
+                        className="mb-3 block text-base text-white font-extralight"
                     >
-                        service
+                        Detail
                     </label>
                     <textarea
-                        name="date"
-                        id="date"
-                        placeholder="Enter date here"
-                        className="w-[590px] rounded-md ml-[14px]  border border-[#e0e0e0] bg-white py-3 px-3 h-[114px] text-base  text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        id="details"
+                        name="details"
+                        placeholder="Enter details here"
+                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-3 h-[114px] text-base text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
                 </div>
 
                 <div className="flex justify-center gap-[29px]">
-                    <button className=" rounded-3xl bg-[#38c738] py-2 text-center  text-sm font-semibold gap-2 hover:bg-green-600 text-white outline-none px-[59px] flex items-center ">
-                        <img src={image_1} alt="" className="w-[30px]" />
-                        <p className="">Chat Via WA</p>
+                    <button className="flex items-center gap-2 rounded-3xl bg-[#38c738] py-2 px-[59px] text-white font-semibold text-sm hover:bg-green-600 outline-none">
+                        <img
+                            src={image_1}
+                            alt="WhatsApp icon"
+                            className="w-[30px]"
+                        />
+                        Chat Via WA
                     </button>
-                    <button className=" rounded-3xl text-[#cc0001]  bg-white py-2  text-center  font-semibold text-sm  outline-none px-[59px]">
+                    <button className="rounded-3xl bg-white py-2 px-[59px] text-[#cc0001] font-semibold text-sm outline-none">
                         Gratis Konsultasi
                     </button>
                 </div>
