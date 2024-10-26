@@ -8,13 +8,18 @@ export default {
             },
             keyframes: {
                 sweep3D: {
-                    '0%': { transform: 'rotateY(0deg)' },
-                    '50%': { transform: 'rotateY(180deg)' },
-                    '100%': { transform: 'rotateY(0deg)' },
+                    "0%": { transform: "rotateY(0deg)" },
+                    "50%": { transform: "rotateY(180deg)" },
+                    "100%": { transform: "rotateY(0deg)" },
+                },
+                slideInUp: {
+                    "0%": { transform: "translateY(20%)", opacity: 0 },
+                    "100%": { transform: "translateY(0)", opacity: 1 },
                 },
             },
             animation: {
-                sweep3D: 'sweep3D 0.5s ease-in-out', // Durasi dipercepat menjadi 0.5 detik
+                sweep3D: "sweep3D 0.5s ease-in-out",
+                slideInUp: "slideInUp 0.5s ease-out",
             },
         },
     },

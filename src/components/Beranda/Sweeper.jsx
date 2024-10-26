@@ -102,7 +102,9 @@ export default function Sweeper() {
                                     />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-xl text-slate-900">Guide</h3>
+                                    <h3 className="font-bold text-xl text-slate-900">
+                                        Guide
+                                    </h3>
                                     <p className="font-bold text-sm bg-slate-50 p-1 max-h-max rounded-xl">
                                         Tour Guide Berbahasa Indonesia
                                     </p>
@@ -118,7 +120,9 @@ export default function Sweeper() {
                                 </div>
 
                                 <div>
-                                    <h3 className="font-bold text-xl text-slate-900">Info</h3>
+                                    <h3 className="font-bold text-xl text-slate-900">
+                                        Info
+                                    </h3>
                                     <p className="font-bold text-sm bg-slate-50 p-1 max-h-max rounded-xl">
                                         Info Penting Di Luar Negri
                                     </p>

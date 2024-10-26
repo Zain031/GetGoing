@@ -4,25 +4,23 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const Navbar_1 = () => {
     return (
-        <>
-            <div className="flex justify-evenly items-center  pt-[20px] pb-[30px] font-poppins px-[260px] gap-40">
+        <div className="animate-slideInUp">
+            <div className="flex justify-evenly items-center pt-[20px] pb-[30px] font-poppins px-[260px] gap-40">
                 <div className="flex items-center gap-2 ">
                     <img
                         src={image_1}
                         alt="Logo Get Going"
                         className="w-[200px]"
                     />
-
                     <div className="flex items-center w-[448px] h-[41px] shadow-[0_0_15px_5px_rgba(255,0,0,0.5)] rounded-full">
                         <input
-                            className="w-full px-4 py-2 text-sm text-gray-700 bg-white rounded-l-full focus:outline-none "
+                            className="w-full px-4 py-2 text-sm text-gray-700 bg-white rounded-l-full focus:outline-none"
                             type="text"
                             placeholder="Cari negara, kota atau guide"
                         />
                         <BsArrowRightCircleFill className="text-red-700 text-4xl mr-1 cursor-pointer" />
                     </div>
                 </div>
-
                 <div className="flex items-center gap-5 text-sm text-red-600">
                     <p className="font-bold text-red-600">Beranda</p>
                     <p>Servis Kami</p>
@@ -32,7 +30,7 @@ const Navbar_1 = () => {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
