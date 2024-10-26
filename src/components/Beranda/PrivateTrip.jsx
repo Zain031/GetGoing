@@ -103,7 +103,7 @@ const PrivateTrip = () => {
                     className="grid grid-cols-2 gap-4 max-w-screen-lg mx-auto p-4 px-[42px] py-[58px] rounded-l-[45px] w-[630px]"
                     style={{
                         background:
-                            "linear-gradient(to left, #ff9e23, red, darkred)",
+                            "linear-gradient(to left, #ff9e23, #ff8262,#f02424, #d10809)",
                     }}
                 >
                     {data.map((item, index) => (
