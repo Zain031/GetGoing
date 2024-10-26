@@ -9,12 +9,13 @@ import Navbar_1 from "./components/Navbar_1";
 import Beranda from "./pages/Beranda";
 import Navbar_2 from "./components/Navbar_2";
 import FormKonsultasi from "./components/ServiceKami/FormKonsultasi";
+import JumlahPerjalanan from "./components/ServiceKami/JumlahPerjalanan";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <FormKonsultasi/>,
+            element: <JumlahPerjalanan/>,
         },
     ]);
 

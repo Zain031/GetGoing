@@ -22,10 +22,30 @@ const Navbar_1 = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-5 text-sm text-red-600">
-                <p className={`${location.pathname === "/" && "font-bold"} whitespace-nowrap    text-red-600`}>Beranda</p>
-                <p className={` ${location.pathname === "/servicekami" && "font-bold"} whitespace-nowrap`}>Servis Kami</p>
-                <p  className={` ${location.pathname === "/blog" && "font-bold"} whitespace-nowrap`}>Blog</p>
-                <p className="text-black font-bold tracking-widest">Login</p>
+                    <p
+                        className={`${
+                            location.pathname === "/" && "font-bold"
+                        } whitespace-nowrap    text-red-600`}
+                    >
+                        Beranda
+                    </p>
+                    <p
+                        className={` ${
+                            location.pathname === "/servicekami" && "font-bold"
+                        } whitespace-nowrap`}
+                    >
+                        Servis Kami
+                    </p>
+                    <p
+                        className={` ${
+                            location.pathname === "/blog" && "font-bold"
+                        } whitespace-nowrap`}
+                    >
+                        Blog
+                    </p>
+                    <p className="text-black font-bold tracking-widest">
+                        Login
+                    </p>
                 </div>
             </div>
         </div>

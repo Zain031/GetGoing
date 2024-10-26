@@ -23,10 +23,10 @@ const FormKonsultasi = () => {
 
     return (
         <div className="mx-auto w-[640px] bg-[#cc0001] rounded-xl h-[652px] font-poppins">
-            <h1 className="pt-4 pl-4 text-white font-extrabold text-3xl">
+            <h1 className="pt-4 pl-4 text-white font-extrabold text-3xl ml-[20px]">
                 Konsultasikan dengan kami
             </h1>
-            <p className="pt-1 pl-4 text-md font-light text-white">
+            <p className="pt-1 pl-4 text-md font-light text-white ml-[20px]">
                 Tim kami siap untuk membantu perjalananmu!
             </p>
 
@@ -43,7 +43,7 @@ const FormKonsultasi = () => {
                             type="text"
                             name="fName"
                             id="fName"
-                            placeholder="First Name"
+                            placeholder="John"
                             className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                         />
                     </div>
@@ -58,7 +58,7 @@ const FormKonsultasi = () => {
                             type="text"
                             name="lName"
                             id="lName"
-                            placeholder="Last Name"
+                            placeholder="Doe"
                             className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                         />
                     </div>
@@ -76,7 +76,7 @@ const FormKonsultasi = () => {
                             type="text"
                             name="email"
                             id="email"
-                            placeholder="Alamat Email"
+                            placeholder="my@email.com"
                             className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                         />
                     </div>
@@ -91,13 +91,13 @@ const FormKonsultasi = () => {
                             type="text"
                             name="phone"
                             id="phone"
-                            placeholder="Nomor Telepon"
+                            placeholder="+62123456789"
                             className="rounded-md w-[280px] h-[38px] border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                         />
                     </div>
                 </div>
 
-                <div className="mb-[26px]  bg-blue-700  mx-[25px] mt-2">
+                <div className="mb-[26px]   mx-[25px] mt-2">
                     <label
                         htmlFor="service"
                         className="mb-3 block text-base text-white font-extralight w-full"
