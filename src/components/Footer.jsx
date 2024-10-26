@@ -19,7 +19,7 @@ const Footer = () => {
                     <p>@getgoing.co.id</p>
                 </div>
                 <div>
-                    <img src={image_1} alt="" />
+                    <img className="w-[800px]" src={image_1} alt="" />
                 </div>
                 <div>
                     <p className="font-bold text-md mb-3">DOWNLOAD DI</p>

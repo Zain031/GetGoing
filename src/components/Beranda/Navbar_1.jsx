@@ -5,7 +5,7 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 const Navbar_1 = () => {
     return (
         <>
-            <div className="flex justify-between items-center  py-[30px] font-poppins px-[260px]">
+            <div className="flex justify-evenly items-center  pt-[20px] pb-[30px] font-poppins px-[260px] gap-40">
                 <div className="flex items-center gap-2 ">
                     <img
                         src={image_1}

@@ -2,7 +2,7 @@ import React from "react";
 import image_1 from "../../assets/Beranda/cityImages_Bern-City(1).png";
 import image_2 from "../../assets/Beranda/cityImages_Gallery 1.png";
 import image_3 from "../../assets/Beranda/cityImages_Untitled design (19)-min.png";
-import image_4 from "../../assets/Beranda/cityImages_Untitled design (21)-min (1).png";
+import image_4 from "../../assets/Beranda//tripPlanner_1706723624lucas-davies-iP8ElEhqHeY-unsplash.jpg";
 import image_5 from "../../assets/Beranda/cityImages_Untitled design (22)-min.png";
 
 const KotaPopuler = () => {
