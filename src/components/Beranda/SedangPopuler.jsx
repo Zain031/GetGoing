@@ -35,26 +35,25 @@ const SedangPopuler = () => {
     ];
 
     return (
-        <div className="px-[260px] pb-20">
+        <div className="px-4 sm:px-10 lg:px-[260px] pb-10 lg:pb-20">
             <h2
-                style={{ fontFamily: "Poppins", fontSize: "32px" }}
-                className="my-4 font-bold"
+                style={{ fontFamily: "Poppins" }}
+                className="text-2xl sm:text-3xl lg:text-4xl my-4 font-bold"
             >
                 Sedang <span className="text-[#c11313]"> Populer</span>
             </h2>
-            <div className="flex gap-[53px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:gap-[53px] gap-4 md:gap-6 lg:gap-[53px]">
                 {data.map((item, index) => (
-                    <div key={index}>
-                        <div className="w-[205px] h-[205px] overflow-hidden rounded-2xl flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2 relative">
+                    <div key={index} className="flex flex-col items-center">
+                        <div className="w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] lg:w-[205px] lg:h-[205px] overflow-hidden rounded-2xl flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2 relative">
                             <img
-                                className="w-[205px] h-[205px] object-cover rounded-2xl"
+                                className="w-full h-full object-cover rounded-2xl"
                                 src={item.image}
                                 alt={item.name}
                             />
-
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40 rounded-2xl"></div>
                         </div>
-                        <div className="pt-2">
+                        <div className="pt-2 text-center">
                             <h4 className="text-slate-700 font-bold font-poppins">
                                 {item.name}
                             </h4>

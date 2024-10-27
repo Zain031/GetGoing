@@ -14,124 +14,86 @@ import image_7 from "../../assets/Beranda/Screenshot from 2024-10-26 07-06-00.pn
 
 export default function Sweeper() {
     return (
-        <>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                loop={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                speed={950}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Navigation]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <div className="px-[260px] flex gap-[120px] font-poppins">
-                        <div className="w-[600px] h-[350px] overflow-hidden rounded-2xl relative">
+        <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            loop={true}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+            }}
+            speed={950}
+            pagination={{
+                clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Navigation]}
+            className="mySwiper"
+        >
+            <SwiperSlide>
+                <div className="px-4 sm:px-10 md:px-16 lg:px-32 xl:px-[260px] flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-[120px] font-poppins">
+                    <div className="w-full md:w-[600px] h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-2xl relative">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={image_2}
+                            alt=""
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 rounded-2xl"></div>
+                    </div>
+                    <div className="text-center text-sm text-slate-500">
+                        <p>
+                            EKSPLOR DAN NIKMATI MUDAH LIBURAN KE <br />
+                            LUAR NEGRI DENGAN
+                        </p>
+                        <p className="text-slate-800 font-extrabold text-xl sm:text-2xl mt-2">
+                            APLIKASI GET GOING
+                        </p>
+                        <p className="mt-4">DAPAT DI DOWNLOAD DI</p>
+                        <div className="flex justify-center gap-4 sm:gap-8 md:gap-[75px] mt-3">
                             <img
-                                className="w-full h-full object-cover"
-                                src={image_2}
-                                alt=""
+                                className="w-[150px] sm:w-[191px]"
+                                src={image_3}
+                                alt="App Store"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 rounded-2xl"></div>
-                        </div>
-                        <div className="pb-[75px] pt-[65px] text-center text-sm text-slate-500">
-                            <p>
-                                EKSPLOR DAN NIKMATI MUDAH LIBURAN KE <br />
-                                LUAR NEGRI DENGAN
-                            </p>
-                            <p className="text-slate-800 font-extrabold text-2xl mt-2">
-                                APLIKASI GET GOING
-                            </p>
-                            <br /> DAPAT DI DOWNLOAD DI
-                            <div className="flex gap-[75px] mt-3">
-                                <img
-                                    className="w-[191px]"
-                                    src={image_3}
-                                    alt=""
-                                />
-                                <img
-                                    className="w-[191px]"
-                                    src={image_4}
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                className="w-[150px] sm:w-[191px]"
+                                src={image_4}
+                                alt="Google Play"
+                            />
                         </div>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="px-[260px] flex gap-[140px]">
-                        <div className="w-[600px] h-[350px] overflow-hidden rounded-2xl relative">
-                            <img
-                                className="w-full h-full object-cover"
-                                src={image_1}
-                                alt=""
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 rounded-2xl"></div>
-                        </div>
-                        <div className="mb-[35px]">
-                            <div className="my-12 transition-transform duration-200 hover:-translate-y-2 flex gap-8">
-                                <div>
-                                    <img
-                                        src={image_5}
-                                        alt=""
-                                        className="w-12"
-                                    />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-xl text-slate-900">
-                                        Trip Planner
-                                    </h3>
-                                    <p className="font-bold text-sm bg-slate-50 p-1 max-h-max rounded-xl">
-                                        Susun Rute Perjalanan Sendiri
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="my-12 transition-transform duration-200 hover:-translate-y-2 flex gap-8">
-                                <div>
-                                    <img
-                                        src={image_6}
-                                        alt=""
-                                        className="w-12"
-                                    />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-xl text-slate-900">
-                                        Guide
-                                    </h3>
-                                    <p className="font-bold text-sm bg-slate-50 p-1 max-h-max rounded-xl">
-                                        Tour Guide Berbahasa Indonesia
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="mt-12 transition-transform duration-200 hover:-translate-y-2 flex gap-8">
-                                <div className="rounded-full">
-                                    <img
-                                        src={image_7}
-                                        alt=""
-                                        className="w-12"
-                                    />
-                                </div>
-
-                                <div>
-                                    <h3 className="font-bold text-xl text-slate-900">
-                                        Info
-                                    </h3>
-                                    <p className="font-bold text-sm bg-slate-50 p-1 max-h-max rounded-xl">
-                                        Info Penting Di Luar Negri
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="px-4 sm:px-10 md:px-16 lg:px-32 xl:px-[260px] flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-[140px]">
+                    <div className="w-full md:w-[600px] h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-2xl relative">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={image_1}
+                            alt=""
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 rounded-2xl"></div>
                     </div>
-                </SwiperSlide>
-            </Swiper>
-        </>
+                    <div className="mb-8 md:mb-[35px]">
+                        {[{ src: image_5, title: "Trip Planner", text: "Susun Rute Perjalanan Sendiri" },
+                          { src: image_6, title: "Guide", text: "Tour Guide Berbahasa Indonesia" },
+                          { src: image_7, title: "Info", text: "Info Penting Di Luar Negri" }]
+                          .map((item, index) => (
+                            <div key={index} className="my-6 md:my-12 transition-transform duration-200 hover:-translate-y-2 flex gap-4 sm:gap-6 md:gap-8">
+                                <div>
+                                    <img src={item.src} alt={item.title} className="w-10 sm:w-12" />
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-lg sm:text-xl text-slate-900">{item.title}</h3>
+                                    <p className="font-bold text-xs sm:text-sm bg-slate-50 p-1 rounded-xl">
+                                        {item.text}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </SwiperSlide>
+        </Swiper>
     );
 }
