@@ -18,18 +18,13 @@ const Test = () => {
         { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
         { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
         { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
-        { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
-        { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
-        { image: image_1, name: "Gio", place: "Amsterdam, Jerman" },
+
     ];
 
     return (
-        <div className="px-4 sm:px-10 lg:px-[260px] pb-10 lg:pb-20">
-            <h2
-                style={{ fontFamily: "Poppins" }}
-                className="text-2xl sm:text-3xl lg:text-4xl my-4 font-bold"
-            >
-                Sedang <span className="text-[#c11313]"> Populer</span>
+        <div className="px-4 sm:px-10 lg:px-[260px] pb-10 lg:pb-20 ">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl my-4 font-bold font-poppins mb-7">
+                Sedang <span className="text-[#c11313]">Populer</span>
             </h2>
 
             <Swiper
@@ -38,15 +33,13 @@ const Test = () => {
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
                 className="mySwiper"
-                breakpoints={{
-                    640: { slidesPerView: 3, spaceBetween: 30 },
-                    1024: { slidesPerView: 4, spaceBetween: 40 },
-                }}
+                aria-label="Popular places slider"
+
             >
                 {data.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div className="flex flex-col items-center">
-                            <div className="w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] lg:w-[205px] lg:h-[205px] overflow-hidden rounded-2xl flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2 relative">
+                            <div className="w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] lg:w-[205px] lg:h-[205px] overflow-hidden rounded-2xl transition-transform duration-300 hover:-translate-y-2 relative">
                                 <img
                                     className="w-full h-full object-cover rounded-2xl"
                                     src={item.image}

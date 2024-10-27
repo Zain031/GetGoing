@@ -52,9 +52,12 @@ const Navbar_1 = () => {
                     >
                         Blog
                     </p>
-                    <p className="text-black font-bold tracking-widest">
-                        Login
-                    </p>
+
+                    <Link to={"/login"}>
+                        <p className="text-black font-bold tracking-widest">
+                            Login
+                        </p>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -62,12 +65,6 @@ const Navbar_1 = () => {
 };
 
 export default Navbar_1;
-
-
-
-
-
-
 
 // import React from "react";
 // import image_1 from "../../src/assets/Beranda/LogoGetGoing-1b06f75eefdc319bb98ba925a24ee023.png";

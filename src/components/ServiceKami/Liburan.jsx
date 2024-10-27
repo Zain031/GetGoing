@@ -15,7 +15,7 @@ import image_5 from "../../assets/Servis Kami/1711340541IMG-20231028-WA0016.jpg"
 import image_6 from "../../assets/Servis Kami/1711345182Image_20221216_083832_695 (2).jpeg";
 import image_7 from "../../assets/Servis Kami/1711346320167869b4-8b1a-421e-8e49-3491c4d0540b.jpg";
 
-import image_8 from "../../assets/Servis Kami/17113463206288db11-2770-4c75-ad7c-54023ccd9eef (1).JPG";
+import image_8 from "../../assets/Servis Kami/b.JPG";
 export default function Liburan() {
     const [swiperRef, setSwiperRef] = useState(null);
 

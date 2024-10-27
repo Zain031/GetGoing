@@ -72,7 +72,12 @@ const Navbar_2 = () => {
                 >
                     Blog
                 </p>
-                <p className="text-black font-bold tracking-widest">Login</p>
+
+                <Link to={"/login"}>
+                    <p className="text-black font-bold tracking-widest">
+                        Login
+                    </p>
+                </Link>
             </div>
         </div>
     );

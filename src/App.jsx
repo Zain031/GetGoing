@@ -16,6 +16,7 @@ import Peta from "./components/ServiceKami/Peta";
 import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
 import ServiceKami from "./pages/ServiceKami";
 import Test from "./pages/Test";
+import Login from "./pages/Login";
 
 function App() {
     const router = createBrowserRouter([
@@ -28,8 +29,8 @@ function App() {
             element: <ServiceKami/>,
         },
         {
-            path: "/test",
-            element: <Test/>,
+            path: "/login",
+            element: <Login/>,
         }
     ]);
 
