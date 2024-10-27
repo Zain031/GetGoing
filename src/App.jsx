@@ -13,12 +13,13 @@ import JumlahPerjalanan from "./components/ServiceKami/JumlahPerjalanan";
 import MengapaKaami from "./components/ServiceKami/MengapaKami";
 import FounderSection from "./components/ServiceKami/Founder";
 import Liburan from "./components/ServiceKami/Liburan";
+import Peta from "./components/ServiceKami/Peta";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Liburan/>,
+            element: <Peta/>,
         },
     ]);
 
