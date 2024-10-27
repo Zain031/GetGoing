@@ -14,13 +14,18 @@ import FounderSection from "./components/ServiceKami/Founder";
 import Liburan from "./components/ServiceKami/Liburan";
 import Peta from "./components/ServiceKami/Peta";
 import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
+import ServiceKami from "./pages/ServiceKami";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <PrivateTripCard/>,
+            element: <Beranda/>,
         },
+        {
+            path: "/service-kami",
+            element: <ServiceKami/>,
+        }
     ]);
 
     return (

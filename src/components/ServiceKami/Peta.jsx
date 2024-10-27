@@ -4,15 +4,13 @@ import image_2 from "../../assets/Servis Kami/mapp.png";
 
 const Peta = () => {
     return (
-        <div className="relative flex  justify-center font-poppins gap-10 mt-32">
-
-            {/* <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 w-full h-[300px]"
+        <div className="relative flex  justify-center w-screen  font-poppins gap-10 mt-[115px]">
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 w-full h-[450px]"
                 style={{ backgroundImage: `url(${image_2})` }}
-            ></div> */}
+            ></div>
 
-
-            <div className="relative flex gap-10">
+            <div className="relative flex gap-10 mt-10">
                 <div>
                     <img src={image_1} alt="" className="w-[600px]" />
                 </div>
@@ -22,14 +20,16 @@ const Peta = () => {
                         Sekedar Destinasi
                     </h1>
                     <p className="text-gray-400">
-                        Salju, menara Eiffel atau kincir angin di Belanda mungkin
-                        merupakan salah <br /> satu tujuan utama turis-turis
-                        berdatangan ke tanah Eropa. Namun, <br /> sebenarnya Eropa
-                        menawarkan lebih dari sekedar salju. Cahaya aurora di <br />
+                        Salju, menara Eiffel atau kincir angin di Belanda
+                        mungkin merupakan salah <br /> satu tujuan utama
+                        turis-turis berdatangan ke tanah Eropa. Namun, <br />{" "}
+                        sebenarnya Eropa menawarkan lebih dari sekedar salju.
+                        Cahaya aurora di <br />
                         utara Eropa, bangunan-bangunan bersejarah berbaur dengan
                         hiruk pikuk <br /> kota besar di barat, kota-kota tua di
-                        timur dan keindahan alam di daerah <br /> selatan merupakan
-                        hal lain yang tidak boleh terlewatkan saat berada di sini.
+                        timur dan keindahan alam di daerah <br /> selatan
+                        merupakan hal lain yang tidak boleh terlewatkan saat
+                        berada di sini.
                     </p>
                 </div>
             </div>

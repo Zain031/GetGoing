@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import image_1 from "../../src/assets/Beranda/logo.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar_2 = () => {
     const [rotateLogo, setRotateLogo] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
-    const [fontBold,setFontBold] = useState(false)
-    const location = useLocation()
-
+    const [fontBold, setFontBold] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         setRotateLogo(true);
@@ -45,9 +45,33 @@ const Navbar_2 = () => {
             </div>
 
             <div className="flex items-center gap-5 text-sm text-red-600">
-                <p className={`${location.pathname === "/" && "font-bold"} whitespace-nowrap    text-red-600`}>Beranda</p>
-                <p className={` ${location.pathname === "/servicekami" && "font-bold"} whitespace-nowrap`}>Servis Kami</p>
-                <p  className={` ${location.pathname === "/blog" && "font-bold"} whitespace-nowrap`}>Blog</p>
+                <Link to="/">
+                    <p
+                        className={`${
+                            location.pathname === "/" && "font-bold"
+                        } whitespace-nowrap    text-red-600`}
+                    >
+                        Beranda
+                    </p>
+                </Link>
+
+                <Link to="/service-kami">
+                    <p
+                        className={` ${
+                            location.pathname === "/service-kami" && "font-bold"
+                        } whitespace-nowrap`}
+                    >
+                        Servis Kami
+                    </p>
+                </Link>
+
+                <p
+                    className={` ${
+                        location.pathname === "/blog" && "font-bold"
+                    } whitespace-nowrap`}
+                >
+                    Blog
+                </p>
                 <p className="text-black font-bold tracking-widest">Login</p>
             </div>
         </div>

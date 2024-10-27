@@ -2,7 +2,7 @@ import React from "react";
 
 const JumlahPerjalanan = () => {
     return (
-        <div className="flex flex-col items-center text-center p-10 font-poppins  w-max">
+        <div className="flex flex-col items-center text-center p-10 font-poppins  w-max ml-12   mt-10 ">
             <div className="flex items-center gap-8">
                 <div>
                     <p className="text-red-600 text-4xl ">280+</p>
@@ -18,11 +18,11 @@ const JumlahPerjalanan = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mt-5">
                     Private Trip Telah Kami Organisir
                 </h2>
-                <p className="text-gray-500 mt-3 max-w-md">
+                <p className="text-gray-500 mt-3 ">
                     Setiap petualangan memiliki ceritanya sendiri, dan kami
-                    terus berkomitmen untuk merencanakan perjalanan berikutnya
-                    yang akan menjadi kisah tak terlupakan dalam perjalanan
-                    hidupmu.
+                    terus berkomitmen untuk <br /> merencanakan perjalanan
+                    berikutnya yang akan menjadi kisah tak terlupakan dalam{" "}
+                    <br /> perjalanan hidupmu.
                 </p>
             </div>
         </div>

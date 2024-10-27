@@ -22,7 +22,7 @@ const FormKonsultasi = () => {
     };
 
     return (
-        <div className="mx-auto w-[640px] bg-[#cc0001] rounded-xl h-[652px] font-poppins">
+        <div className="mx-auto w-[640px] bg-[#cc0001] rounded-xl h-[652px] font-poppins ml-24 ">
             <h1 className="pt-4 pl-4 text-white font-extrabold text-3xl ml-[20px]">
                 Konsultasikan dengan kami
             </h1>

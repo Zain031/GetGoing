@@ -47,8 +47,8 @@ const cardData = [
 
 export default function PrivateTripCard() {
     return (
-        <div className=" w-max font-poppins ">
-            <div className="grid grid-cols-3 gap-3 p-6 ">
+        <div className=" w-max font-poppins mt-[195px]   ">
+            <div className="grid grid-cols-3 gap-3  ">
                 {cardData.map((card) => (
                     <div
                         key={card.id}
@@ -63,10 +63,8 @@ export default function PrivateTripCard() {
                         </div>
 
                         <div className="h-1/3 p-4 flex flex-col justify-center items-center text-center ">
-                            <h3 className="text-md font-bold">
-                                {card.title}
-                            </h3>
-                            <p className="text-gray-500 text-sm">{card.year}</p>
+                            <h3 className="text-md font-bold">{card.title}</h3>
+                            <p className="text-gray-500 text-sm mt-1">{card.year}</p>
                         </div>
                     </div>
                 ))}

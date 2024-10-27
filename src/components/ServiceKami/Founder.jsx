@@ -52,9 +52,9 @@ const founders_2 = [
     },
 ];
 
-const FounderSection = () => {
+const Founder = () => {
     return (
-        <div className="px-[260px]  py-10 font-poppins ">
+        <div className="px-[260px] mt-[107px] font-poppins mb-[49px] ">
             <div className="flex gap-[19px]">
                 {founders_1.map((item, index) => (
                     <div
@@ -113,4 +113,4 @@ const FounderSection = () => {
     );
 };
 
-export default FounderSection;
+export default Founder;

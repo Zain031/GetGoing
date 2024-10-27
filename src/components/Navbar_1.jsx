@@ -1,10 +1,12 @@
 import React from "react";
 import image_1 from "../../src/assets/Beranda/LogoGetGoing-1b06f75eefdc319bb98ba925a24ee023.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar_1 = () => {
+    const location = useLocation();
     return (
-        <div className="animate-slideInUp">
+        <div className="">
             <div className="flex justify-evenly items-center pt-[20px] pb-[30px] font-poppins px-[260px] gap-40">
                 <div className="flex items-center gap-2 ">
                     <img
@@ -22,20 +24,27 @@ const Navbar_1 = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-5 text-sm text-red-600">
-                    <p
-                        className={`${
-                            location.pathname === "/" && "font-bold"
-                        } whitespace-nowrap    text-red-600`}
-                    >
-                        Beranda
-                    </p>
-                    <p
-                        className={` ${
-                            location.pathname === "/servicekami" && "font-bold"
-                        } whitespace-nowrap`}
-                    >
-                        Servis Kami
-                    </p>
+                    <Link to="/">
+                        <p
+                            className={`${
+                                location.pathname === "/" && "font-bold"
+                            } whitespace-nowrap    text-red-600`}
+                        >
+                            Beranda
+                        </p>
+                    </Link>
+
+                    <Link to="/service-kami">
+                        <p
+                            className={` ${
+                                location.pathname === "/service-kami" &&
+                                "font-bold"
+                            } whitespace-nowrap`}
+                        >
+                            Servis Kami
+                        </p>
+                    </Link>
+
                     <p
                         className={` ${
                             location.pathname === "/blog" && "font-bold"

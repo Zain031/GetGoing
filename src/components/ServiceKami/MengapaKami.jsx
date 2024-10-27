@@ -7,7 +7,7 @@ import {
 
 const MengapaKami = () => {
     return (
-        <section className="py-16 bg-white font-poppins">
+        <section className="pt-16 bg-white font-poppins px-[210px]">
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-4xl font-bold mb-4">
                     Mengapa <span className="text-red-600">Kami</span>

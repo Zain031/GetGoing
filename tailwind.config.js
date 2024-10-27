@@ -15,6 +15,7 @@ export default {
                 slideInUp: {
                     "0%": { transform: "translateY(20%)", opacity: 0 },
                     "100%": { transform: "translateY(0)", opacity: 1 },
+
                 },
             },
             animation: {

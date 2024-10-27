@@ -16,7 +16,7 @@ import image_6 from "../../assets/Servis Kami/1711345182Image_20221216_083832_69
 import image_7 from "../../assets/Servis Kami/1711346320167869b4-8b1a-421e-8e49-3491c4d0540b.jpg";
 
 import image_8 from "../../assets/Servis Kami/17113463206288db11-2770-4c75-ad7c-54023ccd9eef (1).JPG";
-export default function App() {
+export default function Liburan() {
     const [swiperRef, setSwiperRef] = useState(null);
 
     const data = [
@@ -32,8 +32,8 @@ export default function App() {
 
     return (
         <>
-            <div className="container mx-auto flex font-poppins justify-center ">
-                <div className="w-[519px]  p-6  mr-16">
+            <div className="container mx-auto flex gap-20 font-poppins justify-center mt-[200px] px-[100px] ">
+                <div className="w-[519px]  p-6  ">
                     <h2 className="text-3xl font-extrabold text-black mb-2">
                         Liburan
                     </h2>
@@ -68,7 +68,7 @@ export default function App() {
                     </button>
                 </div>
 
-                <div className="w-[519px] mx-auto  py-5 ">
+                <div className="w-[519px]   py-5 ">
                     <Swiper
                         modules={[Virtual, Navigation, Pagination]}
                         onSwiper={setSwiperRef}

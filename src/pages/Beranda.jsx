@@ -11,6 +11,9 @@ const Beranda = () => {
     const [showNavbar2, setShowNavbar2] = useState(false);
 
     useEffect(() => {
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
         const handleScroll = () => {
             const navbar1Height =
                 document.getElementById("navbar_1")?.offsetHeight || 0;
