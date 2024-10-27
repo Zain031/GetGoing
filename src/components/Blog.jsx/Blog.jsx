@@ -42,17 +42,36 @@ export default function Blog() {
         );
     }
 
+    const getRandomCards = () => {
+        const shuffledCards = cards.slice();
+        for (let i = shuffledCards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledCards[i], shuffledCards[j]] = [
+                shuffledCards[j],
+                shuffledCards[i],
+            ];
+        }
+
+        return shuffledCards;
+    };
+
+    const randomCards = getRandomCards();
+
     return (
-        <div className="container mx-auto md:px-[120px] sm:px-6  py-8 ">
+        <div className="container mx-auto md:px-[120px] sm:px-6  pt-8 pb-28 ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                {cards.map((card) => (
+                {randomCards.map((card) => (
                     <div
                         key={card.id}
                         className="rounded-lg shadow-xl overflow-hidden flex flex-col h-[633px] transition-transform duration-300 hover:-translate-y-2 "
                     >
                         <div className=" sm:h-56  bg-blue-400 relative md:h-2/3 h-2/3">
                             <div className="absolute inset-0 flex items-center justify-center text-white ">
-                                <img src={card.image} alt="" className="w-full h-full object-cover" />
+                                <img
+                                    src={card.image}
+                                    alt=""
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
 
