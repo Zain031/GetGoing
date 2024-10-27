@@ -4,7 +4,6 @@ import Sweeper from "./components/Beranda/Sweeper";
 import Populer from "./components/Beranda/SedangPopuler";
 import KotaPopuler from "./components/Beranda/KotaPopuler";
 import Footer from "./components/Footer";
-import PrivateTrip from "./components/Beranda/PrivateTrip";
 import Navbar_1 from "./components/Navbar_1";
 import Beranda from "./pages/Beranda";
 import Navbar_2 from "./components/Navbar_2";
@@ -14,12 +13,13 @@ import MengapaKaami from "./components/ServiceKami/MengapaKami";
 import FounderSection from "./components/ServiceKami/Founder";
 import Liburan from "./components/ServiceKami/Liburan";
 import Peta from "./components/ServiceKami/Peta";
+import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Peta/>,
+            element: <PrivateTripCard/>,
         },
     ]);
 
