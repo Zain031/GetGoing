@@ -17,7 +17,7 @@ import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
 import ServiceKami from "./pages/ServiceKami";
 import Test from "./pages/Test";
 import Login from "./pages/Login";
-import Blog from "./pages/Blog";
+import Blog from "./pages/BlogPage";
 
 function App() {
     const router = createBrowserRouter([
