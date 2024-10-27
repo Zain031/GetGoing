@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import image_1 from "../../assets/Beranda/avatar_PHOTO-2018-09-23-16-32-02.jpg";
-import image_2 from "../../assets/Beranda/bergabungFormImage_E5E046B0-9750-458D-BDCF-C9FE6EF2A763.JPG";
-import image_3 from "../../assets/Beranda/bergabungFormImage_IMG_1904.jpeg";
-import image_4 from "../../assets/Beranda/bergabungFormImage_WhatsApp Image 2023-05-08 at 10.54.49.jpg";
-import image_5 from "../../assets/Beranda/sky.png";
+import image_1 from "../assets/Beranda/avatar_PHOTO-2018-09-23-16-32-02.jpg";
+import image_2 from "../assets/Beranda/bergabungFormImage_E5E046B0-9750-458D-BDCF-C9FE6EF2A763.JPG";
+import image_3 from "../assets/Beranda/bergabungFormImage_IMG_1904.jpeg";
+import image_4 from "../assets/Beranda/bergabungFormImage_WhatsApp Image 2023-05-08 at 10.54.49.jpg";
+import image_5 from "../assets/Beranda/sky.png";
 
 const Test = () => {
     const data = [
@@ -34,7 +34,7 @@ const Test = () => {
 
             <Swiper
                 slidesPerView={5}
-                spaceBetween={10}
+                spaceBetween={5} // Space between slides
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
                 className="mySwiper"

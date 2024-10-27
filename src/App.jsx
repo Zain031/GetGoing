@@ -15,6 +15,7 @@ import Liburan from "./components/ServiceKami/Liburan";
 import Peta from "./components/ServiceKami/Peta";
 import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
 import ServiceKami from "./pages/ServiceKami";
+import Test from "./pages/Test";
 
 function App() {
     const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
         {
             path: "/service-kami",
             element: <ServiceKami/>,
+        },
+        {
+            path: "/test",
+            element: <Test/>,
         }
     ]);
 
