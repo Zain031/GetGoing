@@ -6,6 +6,7 @@ import KotaPopuler from "../components/Beranda/KotaPopuler";
 import Footer from "../components/Footer";
 import Navbar_1 from "../components/Navbar_1";
 import Navbar_2 from "../components/Navbar_2";
+import Blog_2 from "../components/Blog.jsx/Blog_2";
 
 const Beranda = () => {
     const [showNavbar2, setShowNavbar2] = useState(false);
@@ -37,6 +38,7 @@ const Beranda = () => {
                 <SedangPopuler />
                 <PrivateTrip />
                 <KotaPopuler />
+                <Blog_2 />
                 <Footer />
             </div>
         </>
