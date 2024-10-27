@@ -12,12 +12,13 @@ import FormKonsultasi from "./components/ServiceKami/FormKonsultasi";
 import JumlahPerjalanan from "./components/ServiceKami/JumlahPerjalanan";
 import MengapaKaami from "./components/ServiceKami/MengapaKami";
 import FounderSection from "./components/ServiceKami/Founder";
+import Liburan from "./components/ServiceKami/Liburan";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <FounderSection/>,
+            element: <Liburan/>,
         },
     ]);
 
