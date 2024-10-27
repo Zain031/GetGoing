@@ -65,13 +65,15 @@ const Navbar_2 = () => {
                     </p>
                 </Link>
 
-                <p
-                    className={` ${
-                        location.pathname === "/blog" && "font-bold"
-                    } whitespace-nowrap`}
-                >
-                    Blog
-                </p>
+                <Link to={"/blog"}>
+                    <p
+                        className={` ${
+                            location.pathname === "/blog" && "font-bold"
+                        } whitespace-nowrap`}
+                    >
+                        Blog
+                    </p>
+                </Link>
 
                 <Link to={"/login"}>
                     <p className="text-black font-bold tracking-widest">

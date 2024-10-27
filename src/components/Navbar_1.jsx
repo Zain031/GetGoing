@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar_1 = () => {
     const location = useLocation();
     return (
-        <div className="animate-slideInUp">
+        <div className="">
             <div className="flex justify-evenly items-center pt-[20px] pb-[30px] font-poppins px-[260px] gap-40">
                 <div className="flex items-center gap-2 ">
                     <img
@@ -45,13 +45,15 @@ const Navbar_1 = () => {
                         </p>
                     </Link>
 
-                    <p
-                        className={` ${
-                            location.pathname === "/blog" && "font-bold"
-                        } whitespace-nowrap`}
-                    >
-                        Blog
-                    </p>
+                    <Link to={"/blog"}>
+                        <p
+                            className={` ${
+                                location.pathname === "/blog" && "font-bold"
+                            } whitespace-nowrap`}
+                        >
+                            Blog
+                        </p>
+                    </Link>
 
                     <Link to={"/login"}>
                         <p className="text-black font-bold tracking-widest">

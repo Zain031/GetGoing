@@ -17,21 +17,26 @@ import PrivateTripCard from "./components/ServiceKami/PrivateTripCard";
 import ServiceKami from "./pages/ServiceKami";
 import Test from "./pages/Test";
 import Login from "./pages/Login";
+import Blog from "./pages/Blog";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Beranda/>,
+            element: <Beranda />,
         },
         {
             path: "/service-kami",
-            element: <ServiceKami/>,
+            element: <ServiceKami />,
+        },
+        {
+            path: "/blog",
+            element: <Blog />,
         },
         {
             path: "/login",
-            element: <Login/>,
-        }
+            element: <Login />,
+        },
     ]);
 
     return (
