@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import image_1 from "../../src/assets/Beranda/gg.png";
 import image_2 from "../../src/assets/Beranda/ff.png";
 import image_3 from "../../src/assets/Servis Kami/b.JPG";
+import Button from "../components/Button";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -73,19 +74,23 @@ const Login = () => {
                     <div className="flex-grow border-t border-gray-300"></div>
                 </div>
 
-                <button className="w-full gap-48 p-5 mb-4 border font-bold text-sm py-3 border-red-500 text-red-500 rounded-3xl flex items-center justify-left transition-colors hover:bg-red-500 hover:text-white">
-                    <span>
-                        <img src={image_1} alt="" className="w-6" />
-                    </span>
-                    LOGIN WITH GOOGLE
-                </button>
+                <Button
+                    logo={image_2}
+                    color="text-blue-500"
+                    label="LOGIN WITH FACEBOOK"
+                    HovarBgColor="hover:bg-blue-500"
+                    hovarText="hover:text-white"
+                    borderColor="border-blue-500"
+                />
 
-                <button className="w-full gap-48 p-5 mb-4 border font-bold text-sm py-3 border-blue-500 text-blue-500 rounded-3xl flex items-center justify-left transition-colors hover:bg-blue-500 hover:text-white">
-                    <span>
-                        <img src={image_2} alt="" className="w-6" />
-                    </span>
-                    LOGIN WITH FACEBOOK
-                </button>
+                <Button
+                    logo={image_1}
+                    color="text-red-500"
+                    label="LOGIN WITH GOOGLE"
+                    HovarBgColor="hover:bg-red-500"
+                    hovarText="hover:text-white"
+                    borderColor="border-red-500"
+                />
 
                 <p className="text-sm text-gray-500 mt-6">
                     Belum punya akun?{" "}
