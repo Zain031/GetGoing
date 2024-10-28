@@ -29,10 +29,6 @@ const BlogPage = () => {
     return (
         <>
             <div className="justify-center h-screen">
-                <div id="navbar_1">
-                    <Navbar_1 />
-                </div>
-                {showNavbar2 && <Navbar_2 />}
                 <Blog />
                 <Footer />
             </div>

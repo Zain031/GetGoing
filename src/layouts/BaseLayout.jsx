@@ -7,10 +7,9 @@ const BaseLayout = () => {
     return (
         <>
             <section className="flex justify-center w-screen ">
-                <main className="w-full  bg-slate-200">
+                <main className="w-full  ">
                     <Navbar />
                     <Outlet />
-                    <Footer />
                 </main>
             </section>
         </>

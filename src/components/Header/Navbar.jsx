@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-
-import Navbar_2 from "../Navbar_2";
+import Navbar_2 from "./Navbar_2";
 import image_1 from "../../assets/Beranda/LogoGetGoing-1b06f75eefdc319bb98ba925a24ee023.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
@@ -28,8 +27,8 @@ const Navbar = () => {
             link: "/",
         },
         {
-            name: "Tentang Kami",
-            link: "/tentang-kami",
+            name: "Service Kami",
+            link: "/service-kami",
         },
         {
             name: "Blog",
@@ -39,7 +38,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div>
+            <div className={ `${location.pathname === "/login" ? "hidden" : ""} `}>
                 <div id="navbar_1">
                     <div className="flex justify-evenly items-center pt-[20px] mb-[30px] font-poppins px-[260px] gap-40">
                         <div className="flex items-center gap-2 ">

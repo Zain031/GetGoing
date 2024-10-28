@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import image_1 from "../../src/assets/Beranda/logo.png";
+import image_1 from "../../assets/Beranda/logo.png";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
