@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const Navbar_2 = () => {
     const [rotateLogo, setRotateLogo] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
-    const [fontBold, setFontBold] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -17,6 +16,21 @@ const Navbar_2 = () => {
         setTimeout(() => setShowNavbar(true), 100);
         return () => clearTimeout(timer);
     }, []);
+
+    const navList = [
+        {
+            name: "Beranda",
+            link: "/",
+        },
+        {
+            name: "Servis Kami",
+            link: "/service-kami",
+        },
+        {
+            name: "Blog",
+            link: "/blog",
+        },
+    ];
 
     return (
         <div
@@ -45,35 +59,17 @@ const Navbar_2 = () => {
             </div>
 
             <div className="flex items-center gap-5 text-sm text-red-600">
-                <Link to="/">
-                    <p
-                        className={`${
-                            location.pathname === "/" && "font-bold"
-                        } whitespace-nowrap    text-red-600`}
-                    >
-                        Beranda
-                    </p>
-                </Link>
-
-                <Link to="/service-kami">
-                    <p
-                        className={` ${
-                            location.pathname === "/service-kami" && "font-bold"
-                        } whitespace-nowrap`}
-                    >
-                        Servis Kami
-                    </p>
-                </Link>
-
-                <Link to={"/blog"}>
-                    <p
-                        className={` ${
-                            location.pathname === "/blog" && "font-bold"
-                        } whitespace-nowrap`}
-                    >
-                        Blog
-                    </p>
-                </Link>
+                {navList.map((item, index) => (
+                    <Link to={item.link} key={index}>
+                        <p
+                            className={`${
+                                location.pathname === item.link && "font-bold"
+                            } whitespace-nowrap    text-red-600`}
+                        >
+                            {item.name}
+                        </p>
+                    </Link>
+                ))}
 
                 <Link to={"/login"}>
                     <p className="text-black font-bold tracking-widest">

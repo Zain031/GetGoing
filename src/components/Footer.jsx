@@ -4,12 +4,17 @@ import image_2 from "../assets/Beranda/AppStore.svg";
 import image_3 from "../assets/Beranda/GooglePlay.svg";
 
 const Footer = () => {
+
+
     return (
-        <div className="justify-center w-screen font-poppins">
-            <div className="flex flex-col md:flex-row justify-center bg-[#cc0001] px-6 md:px-20 lg:px-[282px] py-10 md:py-[50px] gap-10 md:gap-[177px] text-white">
+        <>
+            <div className="flex  font-poppins flex-col md:flex-row justify-center bg-[#cc0001] px-6 md:px-20 lg:px-[282px] py-10 md:py-[50px] gap-10 md:gap-[177px] text-white">
                 <div className="flex flex-col items-start">
                     <p className="font-bold text-md mb-3">INFORMASI KONTAK</p>
-                    <p>BSD Green Office Park 1, 6th Floor, BSD City, Tangerang, Banten 15345</p>
+                    <p>
+                        BSD Green Office Park 1, 6th Floor, BSD City, Tangerang,
+                        Banten 15345
+                    </p>
                     <p>24/7 - Online</p>
                     <p>lets@getgoing.co.id</p>
                     <p>@getgoing.co.id</p>
@@ -17,7 +22,11 @@ const Footer = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <img className="w-full md:w-[400px] lg:w-[800px]" src={image_1} alt="App Mockup" />
+                    <img
+                        className="w-full md:w-[400px] lg:w-[800px]"
+                        src={image_1}
+                        alt="App Mockup"
+                    />
                 </div>
 
                 <div className="flex flex-col items-start">
@@ -37,13 +46,13 @@ const Footer = () => {
                     <p>F.A.Q</p>
                 </div>
             </div>
-
             <div className="h-[75px] px-6 md:px-20 lg:px-[282px] flex items-center bg-black">
                 <p className="text-white text-center md:text-left">
-                    Copyright © 2024 - PT. Gue Eksplorasi Terus. All rights reserved.
+                    Copyright © 2024 - PT. Gue Eksplorasi Terus. All rights
+                    reserved.
                 </p>
             </div>
-        </div>
+        </>
     );
 };
 
