@@ -31,7 +31,7 @@ export default function Sweeper() {
             className="mySwiper"
         >
             <SwiperSlide>
-                <div className="px-4 sm:px-10 md:px-16 lg:px-32 xl:px-[260px] flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-[120px] font-poppins">
+                <div className="px-4 sm:px-10 md:px-16 lg:px-32 xl:px-[260px] flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-[120px] font-poppins ">
                     <div className="w-full md:w-[600px] h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-2xl relative">
                         <img
                             className="w-full h-full object-cover"
@@ -40,15 +40,15 @@ export default function Sweeper() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 rounded-2xl"></div>
                     </div>
-                    <div className="text-center text-sm text-slate-500">
-                        <p>
+                    <div className="text-center text-md text-slate-500 mt-10">
+                        <p className="tracking-widest">
                             EKSPLOR DAN NIKMATI MUDAH LIBURAN KE <br />
                             LUAR NEGRI DENGAN
                         </p>
-                        <p className="text-slate-800 font-extrabold text-xl sm:text-2xl mt-2">
+                        <p className="text-slate-800 font-extrabold text-xl sm:text-2xl mt-2 ">
                             APLIKASI GET GOING
                         </p>
-                        <p className="mt-4">DAPAT DI DOWNLOAD DI</p>
+                        <p className="mt-4 tracking-widest textarea-md">DAPAT DI DOWNLOAD DI</p>
                         <div className="flex justify-center gap-4 sm:gap-8 md:gap-[75px] mt-3">
                             <img
                                 className="w-[150px] sm:w-[191px]"

@@ -3,6 +3,8 @@ import image_1 from "../../src/assets/Beranda/gg.png";
 import image_2 from "../../src/assets/Beranda/ff.png";
 import image_3 from "../../src/assets/Servis Kami/b.JPG";
 import Button from "../components/Button";
+import { FaFacebookSquare } from "react-icons/fa";
+import { IoLogoGoogle } from "react-icons/io";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -44,7 +46,7 @@ const Login = () => {
                     </div>
 
                     <div className="mb-4 text-left">
-                        <label className="block text-gray-400 text-sm font-light mb-2">
+                        <label className="block text-gray-400 text-sm font-light mb-1">
                             PASSWORD
                         </label>
                         <input
@@ -70,21 +72,12 @@ const Login = () => {
 
                 <div className="flex items-center my-4">
                     <div className="flex-grow border-t border-gray-300"></div>
-                    <span className="mx-4 text-gray-400">atau</span>
+                    <span className="mx-4 text-gray-400 ">atau</span>
                     <div className="flex-grow border-t border-gray-300"></div>
                 </div>
 
                 <Button
-                    logo={image_2}
-                    color="text-blue-500"
-                    label="LOGIN WITH FACEBOOK"
-                    HovarBgColor="hover:bg-blue-500"
-                    hovarText="hover:text-white"
-                    borderColor="border-blue-500"
-                />
-
-                <Button
-                    logo={image_1}
+                    logo={<IoLogoGoogle />}
                     color="text-red-500"
                     label="LOGIN WITH GOOGLE"
                     HovarBgColor="hover:bg-red-500"
@@ -92,8 +85,17 @@ const Login = () => {
                     borderColor="border-red-500"
                 />
 
-                <p className="text-sm text-gray-500 mt-6">
-                    Belum punya akun?{" "}
+                <Button
+                    logo={<FaFacebookSquare />}
+                    color="text-blue-500"
+                    label="LOGIN WITH FACEBOOK"
+                    HovarBgColor="hover:bg-blue-500"
+                    hovarText="hover:text-white"
+                    borderColor="border-blue-500"
+                />
+
+                <p className="text-[13px] text-gray-500 mt-6 tracking-wider ">
+                    Belum punya akun?
                     <span className="text-red-500 cursor-pointer">
                         Silahkan registrasi
                     </span>

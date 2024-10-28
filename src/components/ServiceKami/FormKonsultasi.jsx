@@ -108,7 +108,7 @@ const FormKonsultasi = () => {
                         <div
                             tabIndex={0}
                             role="button"
-                            className="w-full  bg-white text-black border border-[#e0e0e0] h-[38px] px-4 py-2 rounded-md"
+                            className="w-full  bg-white font-bold text-black border border-[#e0e0e0] h-[38px] px-4 py-2 rounded-md"
                         >
                             {selectedService}
                         </div>
