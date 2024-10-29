@@ -6,12 +6,16 @@ import Footer from "../components/Footer";
 const BaseLayout = () => {
     return (
         <>
-            <section className="flex justify-center w-screen ">
-                <main className="w-full  ">
-                    <Navbar />
-                    <Outlet />
+            <Navbar />
+            {/* <section className="flex justify-center h-screen">
+                <main className="w-[1280px] flex justify-center items-top bg-red-300">
+                    <section className="flex justify-center flex-row items-top ">
+                        <main className="flex flex-col gap-8  items-top"> */}
+            <Outlet />
+            {/* </main>
+                    </section>
                 </main>
-            </section>
+            </section> */}
         </>
     );
 };

@@ -16,7 +16,7 @@ import Navbar from "../components/Header/Navbar";
 const ServiceKami = () => {
     return (
         <>
-            <div className="justify-center h-screen">
+            <div className="justify-center h-screen mt-44">
                 <div className="flex w-max mt-[104px]">
                     <div className="w-1/2 ">
                         <PrivateTrip />
@@ -32,8 +32,7 @@ const ServiceKami = () => {
                 <Peta />
                 <Liburan />
                 <Founder />
-
-                <Footer />
+                <Footer/>
             </div>
         </>
     );

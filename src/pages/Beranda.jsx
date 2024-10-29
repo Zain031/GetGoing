@@ -10,7 +10,7 @@ import Blog_2 from "../components/Blog.jsx/Blog_2";
 const Beranda = () => {
     return (
         <>
-            <div className="justify-center h-screen">
+            <div className="justify-center h-screen mt-28">
                 <Sweeper />
                 <SedangPopuler />
                 <PrivateTrip />

@@ -4,8 +4,6 @@ import image_2 from "../assets/Beranda/AppStore.svg";
 import image_3 from "../assets/Beranda/GooglePlay.svg";
 
 const Footer = () => {
-
-
     return (
         <>
             <div className="flex  font-poppins flex-col md:flex-row justify-center bg-[#cc0001] px-6 md:px-20 lg:px-[282px] py-10 md:py-[50px] gap-10 md:gap-[177px] text-white">

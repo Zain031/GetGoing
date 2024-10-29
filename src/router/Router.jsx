@@ -18,7 +18,7 @@ const Router = () => {
             children: [
                 {
                     path: "/",
-                    element: <Beranda/>,
+                    element: <Beranda />,
                 },
                 {
                     path: "/service-kami",
@@ -26,12 +26,12 @@ const Router = () => {
                 },
                 {
                     path: "/blog",
-                    element:<Blog />,
+                    element: <Blog />,
                 },
                 {
                     path: "/login",
                     element: <Login />,
-                }
+                },
             ],
         },
     ]);
