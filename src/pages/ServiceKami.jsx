@@ -11,7 +11,6 @@ import MengapaKami from "../components/ServiceKami/MengapaKami";
 import Peta from "../components/ServiceKami/Peta";
 import Liburan from "../components/ServiceKami/Liburan";
 import Founder from "../components/ServiceKami/Founder";
-import Navbar from "../components/Header/Navbar";
 
 const ServiceKami = () => {
     return (
@@ -32,7 +31,7 @@ const ServiceKami = () => {
                 <Peta />
                 <Liburan />
                 <Founder />
-                <Footer/>
+                <Footer />
             </div>
         </>
     );

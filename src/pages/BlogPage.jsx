@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+
 
 import Blog from "../components/Blog.jsx/Blog";
 import Footer from "../components/Footer";
+
 
 const BlogPage = () => {
     return (

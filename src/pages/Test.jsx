@@ -34,7 +34,7 @@ const Test = () => {
 
             <Swiper
                 slidesPerView={5}
-                spaceBetween={5} // Space between slides
+                spaceBetween={5} 
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
                 className="mySwiper"

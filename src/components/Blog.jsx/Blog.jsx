@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoMdTime } from "react-icons/io";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Footer from "../Footer";
 
 export default function Blog() {
     const [cards, setCards] = useState([]);
@@ -121,6 +122,7 @@ export default function Blog() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

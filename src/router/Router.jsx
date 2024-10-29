@@ -2,7 +2,6 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import { RouterProvider } from "react-router-dom";
-import Home from "../components/Home";
 import BaseLayout from "../layouts/BaseLayout";
 import Beranda from "../pages/Beranda";
 import ServiceKami from "../pages/ServiceKami";

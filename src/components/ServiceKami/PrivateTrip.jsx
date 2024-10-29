@@ -42,7 +42,7 @@ const PrivateTrip = () => {
                         <p className="mt-3">Semaumu</p>
                     </p>
                     <div className="grid grid-cols-2 gap-10 max-w-screen-lg mx-auto p-4 text-slate-500 mt-[40px]">
-                        <div className="flex bg-slate-100  ">
+                        <div className="flex bg-slate-100 pr-24 pl-4 py-4 rounded-lg ">
                             <img
                                 className="w-5 h-5 mr-3 mt-5"
                                 src={image_5}
@@ -53,7 +53,7 @@ const PrivateTrip = () => {
                                 sesukamu
                             </p>
                         </div>
-                        <div className="flex">
+                        <div className="flex bg-slate-100 pr-24 pl-4 py-4 rounded-lg ">
                             <img
                                 className="w-5 h-5 mr-3 mt-5"
                                 src={image_5}
@@ -65,7 +65,7 @@ const PrivateTrip = () => {
                                 berangkat
                             </p>
                         </div>
-                        <div className="flex">
+                        <div className="flex bg-slate-100 pr-24 pl-4 py-4 rounded-lg ">
                             <img
                                 className="w-5 h-5 mr-3 mt-5"
                                 src={image_5}
@@ -77,7 +77,7 @@ const PrivateTrip = () => {
                                 perjalanan
                             </p>
                         </div>
-                        <div className="flex">
+                        <div className="flex bg-slate-100 pr-24 pl-4 py-4 rounded-lg ">
                             <img
                                 className="w-5 h-5 mr-3 mt-5"
                                 src={image_5}
