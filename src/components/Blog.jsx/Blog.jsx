@@ -77,8 +77,8 @@ export default function Blog() {
                                 {firstCard.title}
                             </h2>
                             <p className="text-sm font-bold tracking-widest text-red-500 mt-5 text-left w-full pl-6 flex gap-2">
-                                {" "}
-                                LANJUTKAN MEMBACA{" "}
+                                
+                                LANJUTKAN MEMBACA
                                 <FaLongArrowAltRight className="mt-1" />
                             </p>
                         </div>
