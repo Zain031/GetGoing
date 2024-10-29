@@ -45,7 +45,7 @@ const Navbar = () => {
             >
                 <div id="navbar_1">
                     <div className="flex justify-evenly items-center pt-[20px] mb-[30px] font-poppins px-[260px] gap-40">
-                        <div className="flex items-center gap-2 ">
+                        <div className="flex items-center gap-2">
                             <img
                                 src={image_1}
                                 alt="Logo Get Going"
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <input
                                     className={`w-full px-4 py-2 text-sm text-gray-800 bg-transparent ${
                                         location.pathname === "/blog"
-                                            ? "opacity-20"
+                                            ? "opacity-20  placeholder-slate-950"
                                             : ""
                                     } rounded-l-full focus:outline-none`}
                                     type="text"

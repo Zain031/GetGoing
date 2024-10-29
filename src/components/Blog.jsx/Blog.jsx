@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoMdTime } from "react-icons/io";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Blog() {
     const [cards, setCards] = useState([]);
@@ -17,6 +18,8 @@ export default function Blog() {
                 const data = await response.json();
                 const randomCards = getRandomCards(data);
                 setCards(randomCards);
+                console.log(randomCards[0]);
+
                 setFirstCard(randomCards[0]);
                 setIsLoading(false);
             } catch (err) {
@@ -58,7 +61,7 @@ export default function Blog() {
 
     return (
         <>
-            <div className="w-screen h-[504px] overflow-hidden flex flex-col justify-center items-center">
+            <div className="w-screen h-[504px] overflow-hidden flex flex-col justify-center items-center font-poppins">
                 {firstCard && (
                     <div className="relative w-full h-full">
                         <img
@@ -67,17 +70,22 @@ export default function Blog() {
                             alt=""
                             className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center px-4">
-                            <h2 className="text-2xl font-bold mb-2">
+
+                        <div className="absolute inset-0 flex flex-col justify-center items-center w-[631px] h-[247px] bg-white text-black text-center px-4 ml-[273px] rounded-xl mt-[127px]">
+                            <h2 className="text-3xl font-bold mb-2 text-left pl-6 ">
                                 {firstCard.title}
                             </h2>
-                            <p className="text-base">{firstCard.description}</p>
+                            <p className="text-sm font-bold tracking-widest text-red-500 mt-5 text-left w-full pl-6 flex gap-2">
+                                {" "}
+                                LANJUTKAN MEMBACA{" "}
+                                <FaLongArrowAltRight className="mt-1" />
+                            </p>
                         </div>
                     </div>
                 )}
             </div>
 
-            <div className="container mx-auto md:px-[120px] sm:px-6 pt-8 pb-28  ">
+            <div className="container mx-auto md:px-[120px] sm:px-6 mt-24 pb-28  ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
                     {cards.map((card) => (
                         <div
@@ -99,13 +107,15 @@ export default function Blog() {
                                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
                                         {card.title}
                                     </h2>
-                                    <p className="text-gray-600 flex gap-2">
+                                    <p className="text-gray-400 flex gap-2">
                                         <IoMdTime className="mt-1" />
                                         {card.date}
                                     </p>
                                 </div>
-                                <p className="text-gray-700 mt-auto">
-                                    Lanjutkan Membaca
+                                <p className="text-sm font-bold tracking-widest text-red-500 text-left w-full  flex gap-2">
+                                    
+                                    LANJUTKAN MEMBACA{" "}
+                                    <FaLongArrowAltRight className="mt-1" />
                                 </p>
                             </div>
                         </div>
