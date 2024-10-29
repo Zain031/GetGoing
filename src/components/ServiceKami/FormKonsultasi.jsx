@@ -124,7 +124,7 @@ const FormKonsultasi = () => {
                                         }
                                         className="block px-4 py-2 text-left hover:bg-gray-100"
                                     >
-                                        <p className="font-bold text-base">
+                                        <p className="font-bold text-base ">
                                             {service.title}
                                         </p>
                                         <p className="text-sm text-gray-600">

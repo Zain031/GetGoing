@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoMdTime } from "react-icons/io";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Blog_2() {
     const [cards, setCards] = useState([]);
@@ -89,9 +90,10 @@ export default function Blog_2() {
                                     {card.date}
                                 </p>
                             </div>
-                            <p className="text-gray-700 mt-auto">
-                                Lanjutkan Membaca
-                            </p>
+                            <p className="text-sm font-bold tracking-widest text-red-500 text-left w-full  flex gap-2">
+                                    LANJUTKAN MEMBACA{" "}
+                                    <FaLongArrowAltRight className="mt-1" />
+                                </p>
                         </div>
                     </div>
                 ))}
