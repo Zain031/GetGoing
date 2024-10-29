@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import image_1 from "../../src/assets/Beranda/gg.png";
-import image_2 from "../../src/assets/Beranda/ff.png";
+import React, { useState } from "react"
 import image_3 from "../../src/assets/Servis Kami/b.JPG";
 import Button from "../components/Button";
 import { FaFacebookSquare } from "react-icons/fa";

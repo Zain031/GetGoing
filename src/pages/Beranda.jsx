@@ -8,6 +8,9 @@ import Footer from "../components/Footer";
 import Blog_2 from "../components/Blog.jsx/Blog_2";
 
 const Beranda = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
     return (
         <>
             <div className="justify-center h-screen mt-28">

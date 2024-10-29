@@ -13,6 +13,14 @@ import Liburan from "../components/ServiceKami/Liburan";
 import Founder from "../components/ServiceKami/Founder";
 
 const ServiceKami = () => {
+useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+})
+
+
+
+
+
     return (
         <>
             <div className="justify-center h-screen mt-44">
