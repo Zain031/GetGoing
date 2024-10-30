@@ -6,6 +6,7 @@ import Beranda from "../pages/Beranda";
 import ServiceKami from "../pages/ServiceKami";
 import Blog from "../components/Blog.jsx/Blog";
 import Login from "../pages/Login";
+import KataMereka from "../components/Beranda/KataMereka";
 
 
 const Router = () => {
@@ -17,7 +18,7 @@ const Router = () => {
             children: [
                 {
                     path: "/",
-                    element: <Beranda />,
+                    element: <KataMereka/>,
                 },
                 {
                     path: "/service-kami",
