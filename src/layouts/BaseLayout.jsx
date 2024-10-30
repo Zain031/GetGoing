@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Header/Navbar";
-import Footer from "../components/Footer";
+import HubungiKami from "../components/HubungiKami";
 
 
 const BaseLayout = () => {
@@ -17,6 +17,7 @@ const BaseLayout = () => {
                     </section>
                 </main>
             </section> */}
+      
 
         </>
     );

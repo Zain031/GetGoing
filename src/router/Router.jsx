@@ -6,8 +6,6 @@ import Beranda from "../pages/Beranda";
 import ServiceKami from "../pages/ServiceKami";
 import Blog from "../components/Blog.jsx/Blog";
 import Login from "../pages/Login";
-import KataMereka from "../components/Beranda/KataMereka";
-
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -18,7 +16,7 @@ const Router = () => {
             children: [
                 {
                     path: "/",
-                    element: <KataMereka/>,
+                    element: <Beranda />,
                 },
                 {
                     path: "/service-kami",

@@ -12,7 +12,7 @@ import image_3 from "../../assets/Servis Kami/171134041220240103_115420-min.jpg"
 import image_4 from "../../assets/Servis Kami/1711346982IMG_5234_(1).jpg";
 import image_5 from "../../assets/Servis Kami/1711340541IMG-20231028-WA0016.jpg";
 
-export default function Liburan() {
+export default function KataMereka() {
     const descriptionSwiperRef = useRef(null);
     const imageSwiperRef = useRef(null);
 
@@ -100,7 +100,7 @@ export default function Liburan() {
                     onSlideChange={(swiper) => syncSwipers(swiper)}
                     slidesPerView={3}
                     centeredSlides={true}
-                    spaceBetween={20} 
+                    spaceBetween={20}
                     pagination={{ type: "fraction" }}
                     navigation={{
                         nextEl: "#swiper-button-next",
@@ -109,13 +109,22 @@ export default function Liburan() {
                 >
                     {data.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="w-[188px] h-[349px] relative overflow-hidden rounded-2xl">
-                                <img
-                                    className="w-full h-full object-cover"
-                                    src={item.image}
-                                    alt="Liburan"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/40"></div>
+                            <div className="w-[280px] h-2/3 rounded-lg shadow-lg transition-all duration-300 ease-in-out relative overflow-hidden">
+                                <div className="aspect-[3/4] overflow-hidden rounded-lg">
+                                    <img
+                                        className="w-full h-full object-cover"
+                                        src={item.image}
+                                        alt="Liburan"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-center flex flex-col justify-end">
+                                        <h3 className="text-xl font-bold text-white mb-1">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-sm text-gray-200">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}
@@ -124,173 +133,3 @@ export default function Liburan() {
         </div>
     );
 }
-
-// import React, { useState } from "react";
-
-// export default function Component() {
-//     const [activeIndex, setActiveIndex] = useState(1);
-
-//     const items = [
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Herlika",
-//             role: "ENTREPRENEUR",
-//         },
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Hilda",
-//             role: "ENTREPRENEUR",
-//         },
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Kiky",
-//             role: "ENTREPRENEUR",
-//         },
-//     ];
-
-//     const nextSlide = () => {
-//         setActiveIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
-//     };
-
-//     const prevSlide = () => {
-//         setActiveIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
-//     };
-
-//     return (
-//         <div className="relative w-full max-w-4xl mx-auto h-[500px] overflow-hidden">
-//             <div className="absolute inset-0 flex items-center justify-center">
-//                 {items.map((item, index) => {
-//                     let position = index - activeIndex;
-
-//                     return (
-//                         <div
-//                             key={index}
-//                             className={`absolute w-[280px] bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out
-//                 ${
-//                     position === 0
-//                         ? "z-20 opacity-100 scale-100 translate-y-0 rotate-0"
-//                         : position === -1
-//                         ? "z-10 opacity-70 scale-95 -translate-x-32 -rotate-12"
-//                         : position === 1
-//                         ? "z-10 opacity-70 scale-95 translate-x-32 rotate-12"
-//                         : "opacity-0 scale-90"
-//                 }
-//               `}
-//                         >
-// <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
-//     <img
-//         src={item.image}
-//         alt={item.name}
-//         className="object-cover w-full h-full"
-//     />
-//     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-center">
-//         <h3 className="text-xl font-bold text-white mb-1">
-//             {item.name}
-//         </h3>
-//         <p className="text-sm text-gray-200">
-//             {item.role}
-//         </p>
-//     </div>
-// </div>
-//                         </div>
-//                     );
-//                 })}
-//             </div>
-//         </div>
-//     );
-// }
-
-// import React, { useRef, useState } from "react";
-// import { Navigation, Pagination } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
-
-// export default function CarouselCards() {
-//     const [activeIndex, setActiveIndex] = useState(1);
-//     const items = [
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Herlika",
-//             role: "ENTREPRENEUR",
-//         },
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Hilda",
-//             role: "ENTREPRENEUR",
-//         },
-//         {
-//             image: "/placeholder.svg?height=400&width=300",
-//             name: "Kiky",
-//             role: "ENTREPRENEUR",
-//         },
-//     ];
-
-//     const nextSlide = () => {
-//         setActiveIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
-//     };
-
-//     const prevSlide = () => {
-//         setActiveIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
-//     };
-
-//     return (
-//         <div className="relative w-full max-w-4xl mx-auto h-[500px] overflow-hidden">
-//             <div className="absolute inset-0 flex items-center justify-center">
-//                 {items.map((item, index) => {
-//                     let position = index - activeIndex;
-
-//                     return (
-//                         <div
-//                             key={index}
-//                             className={`absolute w-[280px] bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out
-//                             ${
-//                                 position === 0
-//                                     ? "z-20 opacity-100 scale-100 translate-y-0 rotate-0"
-//                                     : position === -1
-//                                     ? "z-10 opacity-70 scale-95 -translate-x-32 -rotate-12"
-//                                     : position === 1
-//                                     ? "z-10 opacity-70 scale-95 translate-x-32 rotate-12"
-//                                     : "opacity-0 scale-90"
-//                             }
-//                           `}
-//                         >
-//                             <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
-//                                 <img
-//                                     src={item.image}
-//                                     alt={item.name}
-//                                     className="object-cover w-full h-full"
-//                                 />
-//                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-center">
-//                                     <h3 className="text-xl font-bold text-white mb-1">
-//                                         {item.name}
-//                                     </h3>
-//                                     <p className="text-sm text-gray-200">
-//                                         {item.role}
-//                                     </p>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     );
-//                 })}
-//             </div>
-
-//             <div className="flex justify-center gap-10 mb-4 items-start">
-//                 <button
-//                     onClick={prevSlide}
-//                     className="text-lg font-bold"
-//                 >
-//                     <BsArrowLeftCircle className="text-4xl text-slate-600 hover:text-red-600" />
-//                 </button>
-//                 <button
-//                     onClick={nextSlide}
-//                     className="text-lg font-bold"
-//                 >
-//                     <BsArrowRightCircle className="text-4xl text-slate-600 hover:text-red-600" />
-//                 </button>
-//             </div>
-//         </div>
-//     );
-// }
